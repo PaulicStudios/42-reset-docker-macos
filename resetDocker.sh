@@ -1,12 +1,9 @@
-# Ensure USER variabe is set
-[ -z "${USER}" ] && export USER=$(whoami)
-
 # Stop Docker
 echo "Stopping Docker"
 pkill Docker
 
 echo -n "Deleting all docker files from the home and goinfree directory"
-rm -rf /goinfre/$USER/docker
+rm -rf ~/goinfre/docker
 echo -n "."
 rm -rf ~/.docker
 echo -n "."
