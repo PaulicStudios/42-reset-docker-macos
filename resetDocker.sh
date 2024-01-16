@@ -5,9 +5,6 @@
 echo "Stopping Docker"
 pkill Docker
 
-# Uninstall docker, docker-compose and docker-machine if they are installed with brew
-brew uninstall -f docker docker-compose docker-machine &>/dev/null ;:
-
 echo -n "Deleting all docker files from the home and goinfree directory"
 rm -rf /goinfre/$USER/docker
 echo -n "."
