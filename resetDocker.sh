@@ -23,6 +23,4 @@ echo -n "."
 rm -rf ~/Library/Preferences/com.docker.docker.plist
 echo "."
 
-echo "Docker is starting again"
-# Start Docker again
-open -g -a Docker
+echo "Finished. You can start docker again"
